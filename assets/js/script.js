@@ -25,12 +25,6 @@ $(document).ready(function () {
             "</td></tr>"
         );
       });
-      $("#delete1").click(function () {
-        var confirmation1 = confirm("Estas seguro?");
-        if (confirmation1 == true) {
-          $("tr#elemento1").remove();
-        }
-      });
       $("#view1").click(function(){
         alert("Id: " + item.id + '\n' +
         "Nombre : " + item.nombre + '\n' +
@@ -38,6 +32,13 @@ $(document).ready(function () {
         "Edad : " + item.edad + '\n' + 
         "Avatar : " + item.avatar);
       });
+      $("#delete1").click(function () {
+        var confirmation1 = confirm("Estas seguro?");
+        if (confirmation1 == true) {
+          $("tr#elemento1").remove();
+        }
+      });
+      
 
       $("#delete2").click(function () {
         var confirmation1 = confirm("Estas seguro?");
