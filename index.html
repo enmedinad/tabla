@@ -17,50 +17,35 @@
 
 <body>
   
-    
-
-
-
-
-
-
-
-
-
-        <div class="row my-3 bg-dark text-white py-4 ">
-          <div class="col-12 mt-1">
-            <h2>AJAX</h2>
-            <p class="mb-5">momento Ajax de rial / Test 1 en consola</p>
-
-            
-            <table class="table table-dark table-striped" id="content">
-                <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Nombre</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Acciones</th>
-                    </tr>
-                </thead>
-            </table>
-          
-            <button class="btn btn-primary w-75" id="mostrar">uwu</button>
-            <button class="btn btn-danger mt-5 w-75" id="add">Añadir</button>
-          </div>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-12 text-white py-2">
+                <h1 class="h3">Administrador de Usuarios</h1>
+            </div>
         </div>
+        <div class="row pt-3">
+            <div class="col-12 border-bottom pb-4">
+                <button class="btn btn-success"><i class="fa-solid fa-circle-plus text-white"></i>Agregar Usuario</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Email</th>
+                          <th scope="col" class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="content">
 
-      </div> 
-
-
-
-
-
-
-
-
-
-
-
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -69,10 +54,10 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
   </script>
-    <script src="../assets/js/ajax.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
     integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
   </script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

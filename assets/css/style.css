@@ -1,0 +1,12 @@
+*{
+    font-family: sans-serif;
+}
+tbody{
+    font-weight: 600;
+}
+.btn-box{
+    text-align: center;
+}
+.btn-box button{
+    margin: auto 5px auto 5px;
+}
