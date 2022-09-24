@@ -4,17 +4,11 @@ $(document).ready(function () {
     function (data) {
       $.each(data, function (i, item) {
         $("#content").append(
-          "<tr id=" +
-            '"elemento' +
-            item.id +
-            '"' +
-            "><td>" +
-            item.id +
-            "</td><td>" +
-            item.nombre +
-            "</td><td>" +
-            item.email +
-            "</td><td>" + "<div class=" + '"btn-box"' + ">" +
+          "<tr id=" + '"elemento' + item.id + '"' + 
+            "><td>" +  item.id + "</td><td>" +
+            item.nombre + "</td><td>" +
+            item.email + "</td><td>" + 
+            "<div class=" + '"btn-box"' + ">" +
             "<button id=" + '"change' + item.id + '"' + "class=" + '"btn btn-success"' + ">" + "<i class=" +
             '"fa-solid fa-pen-to-square fa-md"' + "></i>" + "</button>" +
             "<button id=" + '"delete' + item.id + '"' + "class=" + '"btn btn-danger"' + ">" + "<i class=" +
@@ -25,18 +19,22 @@ $(document).ready(function () {
             "</td></tr>"
         );
       });
-      $("#view1").click(function(){
-        alert("Id: " + item.id + '\n' +
-        "Nombre : " + item.nombre + '\n' +
-        "Email : " + item.email + '\n' +
-        "Edad : " + item.edad + '\n' + 
-        "Avatar : " + item.avatar);
+      $("#change1").click(function () {
+        var name1 = prompt("Ingrese el nuevo nombre");
+        $("tr#elemento1").children(0).html() = name1; 
       });
       $("#delete1").click(function () {
-        var confirmation1 = confirm("Estas seguro?");
+        var confirmation1 = confirm("Estas seguro?" + '\n' + "El elemento sera eliminado");
         if (confirmation1 == true) {
           $("tr#elemento1").remove();
         }
+      });
+      $("#view1").click(function(data){
+          alert("Id: " + item.id + '\n' +
+          "Nombre : " + item.nombre + '\n' +
+          "Email : " + item.email + '\n' +
+          "Edad : " + item.edad + '\n' + 
+          "Avatar : " + item.avatar);      
       });
       
 
