@@ -845,6 +845,7 @@ $(document).ready(function () {
   );
 });
 id=10;
+
 $("#add").click(function () {
   $("#content").append(
     "<tr id=" +
