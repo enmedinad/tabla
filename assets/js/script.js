@@ -906,5 +906,264 @@ $("#add").click(function () {
       "</div>" +
       "</td></tr>"
   );
+
+  $("#change10").click(function () {
+    var confirmname1 = confirm("Desea cambiar el Nombre?");
+    if (confirmname1 == true) {
+      var nameon1 = $("tr#elemento10").children().first().next().html();
+      var name1 = prompt("Ingrese el nuevo Nombre");
+      $("tr#elemento10").children().first().next().html(name1);
+      while (name1 == "") {
+        alert("No puede dejar el espacio en blanco..");
+        var name1 = prompt("Ingrese el nuevo Nombre");
+        $("tr#elemento10").children().first().next().html(name1);
+      }
+      if (name1 === null) {
+        $("tr#elemento10").children().first().next().html(nameon1);
+      }
+    }
+  
+    var confirmemail1 = confirm("Desea cambiar el Email?");
+    if (confirmemail1 == true) {
+      var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+      var emailon1 = $("tr#elemento10").children(":nth-child(3)").html();
+  
+      var email1 = prompt("Ingrese el nuevo Email");
+      var error = 0;
+      var in1 = 5;
+      while (testEmail.test(email1) == false && error < 5) {
+        error++;
+        alert(
+          "Recuerde que debe incluir @ gmail, duoc, etc y . mas el dominio" +
+            "\n" +
+            "Intentos Restantes : " +
+            in1--
+        );
+        var email1 = prompt("Ingrese el nuevo Email");
+        while (email1 == "" && error < 5) {
+          error++;
+          alert(
+            "No puede dejar el espacio en blanco.." +
+              "\n" +
+              "Intentos Restantes : " +
+              in1--
+          );
+          var email1 = prompt("Ingrese el nuevo Email");
+        }
+      }
+      if (error == 5) {
+        alert("Demaciados Intentos fallidos. Cancelando.");
+        var email1 = null;
+      }
+      if (email1 === null) {
+        $("tr#elemento10").children(":nth-child(3)").html(emailon1);
+      } else {
+        $("tr#elemento10").children(":nth-child(3)").html(email1);
+      }
+    }
+  
+    var confirmedad1 = confirm("Desea cambiar la Edad?");
+    if (confirmedad1 == true) {
+      var edad1 = parseInt(prompt("Ingrese su nueva Edad"));
+      $("tr#elemento10").children(":nth-child(4)").html(edad1);
+    }
+  });
+  
+  $("#delete10").click(function () {
+    var confirmation1 = confirm("Estas seguro?");
+    if (confirmation1 == true) {
+      $("tr#elemento10").remove();
+    }
+  });
+  $("#view10").click(function () {
+    alert(
+      "Id: " +
+        $("tr#elemento10").children().first().html() +
+        "\n" +
+        "Nombre : " +
+        $("tr#elemento10").children().first().next().html() +
+        "\n" +
+        "Email : " +
+        $("tr#elemento10").children(":nth-child(3)").html() +
+        "\n" +
+        "Edad : " +
+        $("tr#elemento10").children(":nth-child(4)").html() +
+        "\n" +
+        "Avatar : " +
+        $("tr#elemento10").children(":nth-child(5)").html()
+    );
+  });
+  $("#change11").click(function () {
+    var confirmname1 = confirm("Desea cambiar el Nombre?");
+    if (confirmname1 == true) {
+      var nameon1 = $("tr#elemento11").children().first().next().html();
+      var name1 = prompt("Ingrese el nuevo Nombre");
+      $("tr#elemento11").children().first().next().html(name1);
+      while (name1 == "") {
+        alert("No puede dejar el espacio en blanco..");
+        var name1 = prompt("Ingrese el nuevo Nombre");
+        $("tr#elemento11").children().first().next().html(name1);
+      }
+      if (name1 === null) {
+        $("tr#elemento11").children().first().next().html(nameon1);
+      }
+    }
+  
+    var confirmemail1 = confirm("Desea cambiar el Email?");
+    if (confirmemail1 == true) {
+      var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+      var emailon1 = $("tr#elemento11").children(":nth-child(3)").html();
+  
+      var email1 = prompt("Ingrese el nuevo Email");
+      var error = 0;
+      var in1 = 5;
+      while (testEmail.test(email1) == false && error < 5) {
+        error++;
+        alert(
+          "Recuerde que debe incluir @ gmail, duoc, etc y . mas el dominio" +
+            "\n" +
+            "Intentos Restantes : " +
+            in1--
+        );
+        var email1 = prompt("Ingrese el nuevo Email");
+        while (email1 == "" && error < 5) {
+          error++;
+          alert(
+            "No puede dejar el espacio en blanco.." +
+              "\n" +
+              "Intentos Restantes : " +
+              in1--
+          );
+          var email1 = prompt("Ingrese el nuevo Email");
+        }
+      }
+      if (error == 5) {
+        alert("Demaciados Intentos fallidos. Cancelando.");
+        var email1 = null;
+      }
+      if (email1 === null) {
+        $("tr#elemento11").children(":nth-child(3)").html(emailon1);
+      } else {
+        $("tr#elemento11").children(":nth-child(3)").html(email1);
+      }
+    }
+  
+    var confirmedad1 = confirm("Desea cambiar la Edad?");
+    if (confirmedad1 == true) {
+      var edad1 = parseInt(prompt("Ingrese su nueva Edad"));
+      $("tr#elemento11").children(":nth-child(4)").html(edad1);
+    }
+  });
+  
+  $("#delete11").click(function () {
+    var confirmation1 = confirm("Estas seguro?");
+    if (confirmation1 == true) {
+      $("tr#elemento11").remove();
+    }
+  });
+  $("#view11").click(function () {
+    alert(
+      "Id: " +
+        $("tr#elemento11").children().first().html() +
+        "\n" +
+        "Nombre : " +
+        $("tr#elemento11").children().first().next().html() +
+        "\n" +
+        "Email : " +
+        $("tr#elemento11").children(":nth-child(3)").html() +
+        "\n" +
+        "Edad : " +
+        $("tr#elemento11").children(":nth-child(4)").html() +
+        "\n" +
+        "Avatar : " +
+        $("tr#elemento11").children(":nth-child(5)").html()
+    );
+  });
+  $("#change12").click(function () {
+    var confirmname1 = confirm("Desea cambiar el Nombre?");
+    if (confirmname1 == true) {
+      var nameon1 = $("tr#elemento12").children().first().next().html();
+      var name1 = prompt("Ingrese el nuevo Nombre");
+      $("tr#elemento12").children().first().next().html(name1);
+      while (name1 == "") {
+        alert("No puede dejar el espacio en blanco..");
+        var name1 = prompt("Ingrese el nuevo Nombre");
+        $("tr#elemento12").children().first().next().html(name1);
+      }
+      if (name1 === null) {
+        $("tr#elemento12").children().first().next().html(nameon1);
+      }
+    }
+  
+    var confirmemail1 = confirm("Desea cambiar el Email?");
+    if (confirmemail1 == true) {
+      var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+      var emailon1 = $("tr#elemento12").children(":nth-child(3)").html();
+  
+      var email1 = prompt("Ingrese el nuevo Email");
+      var error = 0;
+      var in1 = 5;
+      while (testEmail.test(email1) == false && error < 5) {
+        error++;
+        alert(
+          "Recuerde que debe incluir @ gmail, duoc, etc y . mas el dominio" +
+            "\n" +
+            "Intentos Restantes : " +
+            in1--
+        );
+        var email1 = prompt("Ingrese el nuevo Email");
+        while (email1 == "" && error < 5) {
+          error++;
+          alert(
+            "No puede dejar el espacio en blanco.." +
+              "\n" +
+              "Intentos Restantes : " +
+              in1--
+          );
+          var email1 = prompt("Ingrese el nuevo Email");
+        }
+      }
+      if (error == 5) {
+        alert("Demaciados Intentos fallidos. Cancelando.");
+        var email1 = null;
+      }
+      if (email1 === null) {
+        $("tr#elemento12").children(":nth-child(3)").html(emailon1);
+      } else {
+        $("tr#elemento12").children(":nth-child(3)").html(email1);
+      }
+    }
+  
+    var confirmedad1 = confirm("Desea cambiar la Edad?");
+    if (confirmedad1 == true) {
+      var edad1 = parseInt(prompt("Ingrese su nueva Edad"));
+      $("tr#elemento12").children(":nth-child(4)").html(edad1);
+    }
+  });
+  
+  $("#delete12").click(function () {
+    var confirmation1 = confirm("Estas seguro?");
+    if (confirmation1 == true) {
+      $("tr#elemento12").remove();
+    }
+  });
+  $("#view12").click(function () {
+    alert(
+      "Id: " +
+        $("tr#elemento12").children().first().html() +
+        "\n" +
+        "Nombre : " +
+        $("tr#elemento12").children().first().next().html() +
+        "\n" +
+        "Email : " +
+        $("tr#elemento12").children(":nth-child(3)").html() +
+        "\n" +
+        "Edad : " +
+        $("tr#elemento12").children(":nth-child(4)").html() +
+        "\n" +
+        "Avatar : " +
+        $("tr#elemento12").children(":nth-child(5)").html()
+    );
+  });
   id++;
 });
