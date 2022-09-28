@@ -52,9 +52,7 @@ $(document).ready(function () {
             '"view' +
             item.id +
             '"' +
-            "class=" +
-            '"btn btn-primary"' +
-            ">" +
+            "type="+'"button"' + "class=" + '"btn btn-primary"' + "data-bs-toggle="+ '"modal"' + "data-bs-target=" + '"#exampleModal' + item.id + '"' + ">" +
             "<i class=" +
             '"fa-solid fa-circle-info fa-md"' +
             "></i>" +
@@ -134,22 +132,22 @@ $(document).ready(function () {
         }
       });
       $("#view1").click(function () {
-        alert(
+        $("#modal1").html(
           "Id: " +
             $("tr#elemento1").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento1").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento1").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento1").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento1").children(":nth-child(5)").html()
-        );
+        )
       });
 
       $("#change2").click(function () {
@@ -222,22 +220,22 @@ $(document).ready(function () {
       });
 
       $("#view2").click(function () {
-        alert(
+        $("#modal2").html(
           "Id: " +
             $("tr#elemento2").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento2").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento2").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento2").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento2").children(":nth-child(5)").html()
-        );
+        )
       });
       $("#change3").click(function () {
         var confirmname1 = confirm("Desea cambiar el Nombre?");
@@ -308,22 +306,22 @@ $(document).ready(function () {
         }
       });
       $("#view3").click(function () {
-        alert(
+        $("#modal3").html(
           "Id: " +
             $("tr#elemento3").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento3").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento3").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento3").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento3").children(":nth-child(5)").html()
-        );
+        )
       });
 
       $("#change4").click(function () {
@@ -395,22 +393,22 @@ $(document).ready(function () {
         }
       });
       $("#view4").click(function () {
-        alert(
+        $("#modal4").html(
           "Id: " +
             $("tr#elemento4").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento4").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento4").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento4").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento4").children(":nth-child(5)").html()
-        );
+        )
       });
 
       $("#change5").click(function () {
@@ -482,22 +480,22 @@ $(document).ready(function () {
         }
       });
       $("#view5").click(function () {
-        alert(
+        $("#modal5").html(
           "Id: " +
             $("tr#elemento5").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento5").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento5").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento5").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento5").children(":nth-child(5)").html()
-        );
+        )
       });
       $("#change6").click(function () {
         var confirmname1 = confirm("Desea cambiar el Nombre?");
@@ -567,22 +565,22 @@ $(document).ready(function () {
         }
       });
       $("#view6").click(function () {
-        alert(
+        $("#modal6").html(
           "Id: " +
             $("tr#elemento6").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento6").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento6").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento6").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento6").children(":nth-child(5)").html()
-        );
+        )
       });
       $("#change7").click(function () {
         var confirmname1 = confirm("Desea cambiar el Nombre?");
@@ -652,22 +650,22 @@ $(document).ready(function () {
         }
       });
       $("#view7").click(function () {
-        alert(
+        $("#modal7").html(
           "Id: " +
             $("tr#elemento7").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento7").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento7").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento7").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento7").children(":nth-child(5)").html()
-        );
+        )
       });
       $("#change8").click(function () {
         var confirmname1 = confirm("Desea cambiar el Nombre?");
@@ -737,22 +735,22 @@ $(document).ready(function () {
         }
       });
       $("#view8").click(function () {
-        alert(
+        $("#modal8").html(
           "Id: " +
             $("tr#elemento8").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento8").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento8").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento8").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento8").children(":nth-child(5)").html()
-        );
+        )
       });
 
       $("#change9").click(function () {
@@ -824,22 +822,22 @@ $(document).ready(function () {
         }
       });
       $("#view9").click(function () {
-        alert(
+        $("#modal9").html(
           "Id: " +
             $("tr#elemento9").children().first().html() +
-            "\n" +
+            "</br>" +
             "Nombre : " +
             $("tr#elemento9").children().first().next().html() +
-            "\n" +
+            "</br>" +
             "Email : " +
             $("tr#elemento9").children(":nth-child(3)").html() +
-            "\n" +
+            "</br>" +
             "Edad : " +
             $("tr#elemento9").children(":nth-child(4)").html() +
-            "\n" +
+            "</br>" +
             "Avatar : " +
             $("tr#elemento9").children(":nth-child(5)").html()
-        );
+        )
       });
     }
   );
@@ -896,9 +894,7 @@ $("#add").click(function () {
       '"view' +
       id +
       '"' +
-      "class=" +
-      '"btn btn-primary"' +
-      ">" +
+      "type="+'"button"' + "class=" + '"btn btn-primary"' + "data-bs-toggle="+ '"modal"' + "data-bs-target=" + '"#exampleModal' + id + '"' + ">" +
       "<i class=" +
       '"fa-solid fa-circle-info fa-md"' +
       "></i>" +
@@ -976,19 +972,19 @@ $("#add").click(function () {
     }
   });
   $("#view10").click(function () {
-    alert(
+    $("#modal10").html(
       "Id: " +
         $("tr#elemento10").children().first().html() +
-        "\n" +
+        "</br>" +
         "Nombre : " +
         $("tr#elemento10").children().first().next().html() +
-        "\n" +
+        "</br>" +
         "Email : " +
         $("tr#elemento10").children(":nth-child(3)").html() +
-        "\n" +
+        "</br>" +
         "Edad : " +
         $("tr#elemento10").children(":nth-child(4)").html() +
-        "\n" +
+        "</br>" +
         "Avatar : " +
         $("tr#elemento10").children(":nth-child(5)").html()
     );
@@ -1062,22 +1058,22 @@ $("#add").click(function () {
     }
   });
   $("#view11").click(function () {
-    alert(
+    $("#modal11").html(
       "Id: " +
         $("tr#elemento11").children().first().html() +
-        "\n" +
+        "</br>" +
         "Nombre : " +
         $("tr#elemento11").children().first().next().html() +
-        "\n" +
+        "</br>" +
         "Email : " +
         $("tr#elemento11").children(":nth-child(3)").html() +
-        "\n" +
+        "</br>" +
         "Edad : " +
         $("tr#elemento11").children(":nth-child(4)").html() +
-        "\n" +
+        "</br>" +
         "Avatar : " +
         $("tr#elemento11").children(":nth-child(5)").html()
-    );
+    )
   });
   $("#change12").click(function () {
     var confirmname1 = confirm("Desea cambiar el Nombre?");
@@ -1148,21 +1144,110 @@ $("#add").click(function () {
     }
   });
   $("#view12").click(function () {
-    alert(
+    $("#modal12").html(
       "Id: " +
         $("tr#elemento12").children().first().html() +
-        "\n" +
+        "</br>" +
         "Nombre : " +
         $("tr#elemento12").children().first().next().html() +
-        "\n" +
+        "</br>" +
         "Email : " +
         $("tr#elemento12").children(":nth-child(3)").html() +
-        "\n" +
+        "</br>" +
         "Edad : " +
         $("tr#elemento12").children(":nth-child(4)").html() +
-        "\n" +
+        "</br>" +
         "Avatar : " +
         $("tr#elemento12").children(":nth-child(5)").html()
+    );
+  });
+
+
+
+  $("#change13").click(function () {
+    var confirmname1 = confirm("Desea cambiar el Nombre?");
+    if (confirmname1 == true) {
+      var nameon1 = $("tr#elemento12").children().first().next().html();
+      var name1 = prompt("Ingrese el nuevo Nombre");
+      $("tr#elemento13").children().first().next().html(name1);
+      while (name1 == "") {
+        alert("No puede dejar el espacio en blanco..");
+        var name1 = prompt("Ingrese el nuevo Nombre");
+        $("tr#elemento13").children().first().next().html(name1);
+      }
+      if (name1 === null) {
+        $("tr#elemento13").children().first().next().html(nameon1);
+      }
+    }
+  
+    var confirmemail1 = confirm("Desea cambiar el Email?");
+    if (confirmemail1 == true) {
+      var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+      var emailon1 = $("tr#elemento13").children(":nth-child(3)").html();
+  
+      var email1 = prompt("Ingrese el nuevo Email");
+      var error = 0;
+      var in1 = 5;
+      while (testEmail.test(email1) == false && error < 5) {
+        error++;
+        alert(
+          "Recuerde que debe incluir @ gmail, duoc, etc y . mas el dominio" +
+            "\n" +
+            "Intentos Restantes : " +
+            in1--
+        );
+        var email1 = prompt("Ingrese el nuevo Email");
+        while (email1 == "" && error < 5) {
+          error++;
+          alert(
+            "No puede dejar el espacio en blanco.." +
+              "\n" +
+              "Intentos Restantes : " +
+              in1--
+          );
+          var email1 = prompt("Ingrese el nuevo Email");
+        }
+      }
+      if (error == 5) {
+        alert("Demaciados Intentos fallidos. Cancelando.");
+        var email1 = null;
+      }
+      if (email1 === null) {
+        $("tr#elemento13").children(":nth-child(3)").html(emailon1);
+      } else {
+        $("tr#elemento13").children(":nth-child(3)").html(email1);
+      }
+    }
+  
+    var confirmedad1 = confirm("Desea cambiar la Edad?");
+    if (confirmedad1 == true) {
+      var edad1 = parseInt(prompt("Ingrese su nueva Edad"));
+      $("tr#elemento13").children(":nth-child(4)").html(edad1);
+    }
+  });
+  
+  $("#delete13").click(function () {
+    var confirmation1 = confirm("Estas seguro?");
+    if (confirmation1 == true) {
+      $("tr#elemento13").remove();
+    }
+  });
+  $("#view13").click(function () {
+    $("#modal13").html(
+      "Id: " +
+        $("tr#elemento13").children().first().html() +
+        "</br>" +
+        "Nombre : " +
+        $("tr#elemento13").children().first().next().html() +
+        "</br>" +
+        "Email : " +
+        $("tr#elemento13").children(":nth-child(3)").html() +
+        "</br>" +
+        "Edad : " +
+        $("tr#elemento13").children(":nth-child(4)").html() +
+        "</br>" +
+        "Avatar : " +
+        $("tr#elemento13").children(":nth-child(5)").html()
     );
   });
   id++;
